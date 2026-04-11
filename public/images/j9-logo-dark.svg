@@ -2,11 +2,15 @@
   <!-- Background -->
   <circle cx="250" cy="250" r="155" fill="#2C1810"/>
   <!-- Outer ring -->
-  <circle cx="250" cy="250" r="155" fill="none" stroke="#C9A84C" stroke-width="3"/>
+  <circle cx="250" cy="250" r="155" fill="none" stroke="#C9A84C" stroke-width="2.5"/>
   <!-- Inner ring -->
-  <circle cx="250" cy="250" r="145" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+  <circle cx="250" cy="250" r="145" fill="none" stroke="#C9A84C" stroke-width="1"/>
+  <!-- Diamond -->
+  <polygon points="250,136 260,148 250,160 240,148" fill="#C9A84C"/>
   <!-- J9 -->
-  <text x="250" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="120" font-weight="700" letter-spacing="6" fill="#F5EDD6">J9</text>
+  <text x="250" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="120" font-weight="700" letter-spacing="6" fill="#F5EDD6">J9</text>
+  <!-- Separator line -->
+  <line x1="185" y1="290" x2="315" y2="290" stroke="#C9A84C" stroke-width="1.5"/>
   <!-- DOG SALON -->
-  <text x="250" y="314" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="600" letter-spacing="10" fill="#FFFFFF">DOG SALON</text>
+  <text x="250" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="600" letter-spacing="10" fill="#FFFFFF">DOG SALON</text>
 </svg>
