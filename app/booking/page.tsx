@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function BookingPage() {
   const widgetRef = useRef<HTMLDivElement>(null);
@@ -32,6 +33,16 @@ export default function BookingPage() {
               (920) 495-2306
             </a>
           </p>
+        </div>
+
+        {/* Back link */}
+        <div className="mb-8">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1.5 text-sage-600 text-sm font-medium hover:text-sage-800 transition-colors"
+          >
+            <span aria-hidden="true">←</span> Back to J-9 Dog Salon
+          </Link>
         </div>
 
         {/* Square Appointments Widget — script is injected directly into this div */}
