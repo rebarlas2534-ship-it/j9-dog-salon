@@ -5,6 +5,7 @@ const photos: { src: string; alt: string }[] = [
   { src: "/images/gallery-4.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-5.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-6.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-7.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
 ];
 
 const placeholders = [
