@@ -2,12 +2,6 @@ import Link from "next/link";
 
 const services = [
   {
-    name: "Bath Only",
-    description: "Shampoo, conditioning, blow-dry, and spritz.",
-    addon: false,
-    prices: { small: "$40", medium: "$55", large: "$70", xl: "$85", xxl: "$100" },
-  },
-  {
     name: "Bath + Brush Out",
     description: "Full bath plus a thorough brush-out to reduce shedding and tangles.",
     addon: false,
@@ -16,15 +10,8 @@ const services = [
   {
     name: "Full Groom",
     description: "Bath, breed-specific cut, nail trim, and ear cleaning — all included.",
-    note: "Nails always included.",
     addon: false,
     prices: { small: "$65", medium: "$85", large: "$105", xl: "$130", xxl: "$160+" },
-  },
-  {
-    name: "Nail Trim",
-    description: "Standalone nail clipping and filing. Already included in Full Groom.",
-    addon: false,
-    prices: { small: "$15", medium: "$15", large: "$20", xl: "$20", xxl: "$25" },
   },
   {
     name: "De-Shedding",
@@ -33,10 +20,10 @@ const services = [
     prices: { small: "+$20", medium: "+$25", large: "+$30", xl: "+$35", xxl: "+$100" },
   },
   {
-    name: "Puppy's First Groom",
-    description: "A gentle intro for pups under 6 months — calm, positive, and confidence-building.",
+    name: "Nail Trim",
+    description: "Standalone nail clipping and filing. Already included in Full Groom.",
     addon: false,
-    prices: { small: "$40", medium: "$50", large: "$60", xl: "Call", xxl: "Call" },
+    prices: { small: "$15", medium: "$15", large: "$20", xl: "$20", xxl: "$25" },
   },
 ];
 
