@@ -24,7 +24,7 @@ export default function AboutPage() {
                 src="/images/gallery-3.jpeg"
                 alt="Joan Barlas, Owner and Lead Groomer at J-9 Dog Salon"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center scale-110"
                 sizes="256px"
                 priority
               />
