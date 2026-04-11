@@ -1,3 +1,7 @@
+"use client";
+
+import Script from "next/script";
+
 export default function BookingPage() {
   return (
     <div className="py-16 bg-white">
@@ -12,20 +16,14 @@ export default function BookingPage() {
           </p>
         </div>
 
-        {/* MoeGo Booking Widget Placeholder */}
-        <div className="rounded-2xl border-2 border-dashed border-sage-300 bg-sage-50 p-12 text-center min-h-64 flex flex-col items-center justify-center gap-4">
-          <span className="text-5xl">📅</span>
-          <p className="text-stone-600 font-medium">Online Booking Coming Soon</p>
-          <p className="text-stone-400 text-sm max-w-sm">
-            {/* Insert MoeGo embed code here */}
-            The online booking widget will appear here once your MoeGo account is connected.
-          </p>
-          <a
-            href="tel:9204952306"
-            className="mt-2 inline-block px-6 py-2 rounded-lg bg-sage-600 text-white font-medium hover:bg-sage-700 transition-colors text-sm"
-          >
-            Call to Book: (920) 495-2306
-          </a>
+        {/* Square Appointments Widget */}
+        <div className="w-full min-h-96">
+          {/* Start Square Appointments Embed Code */}
+          <Script
+            src="https://square.site/appointments/buyer/widget/uc3yno4komnjs6/LMVWX2XP612M9.js"
+            strategy="lazyOnload"
+          />
+          {/* End Square Appointments Embed Code */}
         </div>
 
         {/* Info cards */}
