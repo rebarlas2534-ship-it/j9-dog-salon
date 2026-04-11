@@ -13,7 +13,7 @@ export default function Home() {
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-stone-900 leading-tight mb-6">
               Where Every Pup<br />
-              <span className="text-sage-600">Leaves Looking Great</span>
+              <span className="text-[#2C1810]">Leaves Looking Great</span>
             </h1>
             <p className="text-lg text-stone-600 max-w-lg mb-8 mx-auto md:mx-0">
               Professional dog grooming with a gentle touch. We treat your furry
@@ -28,7 +28,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/services"
-                className="px-8 py-3 rounded-xl border-2 border-sage-600 text-sage-700 font-semibold hover:bg-sage-50 transition-colors text-center"
+                className="px-8 py-3 rounded-xl border-2 border-[#2C1810] text-[#2C1810] font-semibold hover:bg-stone-100 transition-colors text-center"
               >
                 View Services
               </Link>
