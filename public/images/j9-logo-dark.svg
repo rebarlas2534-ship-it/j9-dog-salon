@@ -8,5 +8,5 @@
   <!-- J9 -->
   <text x="250" y="278" text-anchor="middle" font-family="Georgia, serif" font-size="120" font-weight="700" letter-spacing="6" fill="#F5EDD6">J9</text>
   <!-- DOG SALON -->
-  <text x="250" y="312" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="6" fill="#C9A84C">DOG SALON</text>
+  <text x="250" y="312" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="8" fill="#F5EDD6">DOG SALON</text>
 </svg>
