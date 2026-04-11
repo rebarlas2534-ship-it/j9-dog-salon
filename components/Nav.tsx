@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const links = [
@@ -19,11 +20,14 @@ export default function Nav() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200">
       <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl">🐾</span>
-          <span className="font-semibold text-stone-800 text-lg tracking-tight">
-            J-9 Dog Salon
-          </span>
+        <Link href="/" aria-label="J-9 Dog Salon — Home">
+          <Image
+            src="/images/j9-logo-light.svg"
+            alt="J-9 Dog Salon"
+            width={60}
+            height={60}
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

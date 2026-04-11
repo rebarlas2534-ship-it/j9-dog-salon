@@ -1,13 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-stone-900 text-stone-400 mt-auto">
       <div className="mx-auto max-w-6xl px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xl">🐾</span>
-            <span className="text-white font-semibold">J-9 Dog Salon</span>
+          <div className="mb-3">
+            <Image
+              src="/images/j9-logo-dark.svg"
+              alt="J-9 Dog Salon"
+              width={64}
+              height={64}
+            />
           </div>
           <p className="text-sm leading-relaxed">
             Professional grooming with love and care in the heart of Sturgeon Bay, Wisconsin.
