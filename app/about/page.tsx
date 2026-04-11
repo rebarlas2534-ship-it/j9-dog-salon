@@ -21,7 +21,7 @@ export default function AboutPage() {
           <div className="flex-shrink-0">
             <div className="relative w-64 h-72 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/joan.jpeg"
+                src="/images/gallery-3.jpeg"
                 alt="Joan Barlas, Owner and Lead Groomer at J-9 Dog Salon"
                 fill
                 className="object-cover object-top"
