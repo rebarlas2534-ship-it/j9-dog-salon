@@ -1,42 +1,11 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import Link from "next/link";
 
 export default function BookingPage() {
-  const widgetRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = widgetRef.current;
-    if (!container) return;
-
-    const script = document.createElement("script");
-    script.src =
-      "https://square.site/appointments/buyer/widget/uc3yno4komnjs6/LMVWX2XP612M9.js";
-    script.async = true;
-    container.appendChild(script);
-
-    return () => {
-      // Clean up on unmount
-      if (container.contains(script)) container.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="py-16 bg-white">
       <div className="mx-auto max-w-3xl px-6">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-stone-900 mb-4">Book an Appointment</h1>
-          <p className="text-stone-500">
-            Schedule your dog&apos;s grooming session online. Prefer to call?{" "}
-            <a href="tel:9204952306" className="text-sage-600 font-medium hover:underline">
-              (920) 495-2306
-            </a>
-          </p>
-        </div>
-
         {/* Back link */}
-        <div className="mb-8">
+        <div className="mb-10">
           <Link
             href="/"
             className="inline-flex items-center gap-1.5 text-sage-600 text-sm font-medium hover:text-sage-800 transition-colors"
@@ -45,11 +14,34 @@ export default function BookingPage() {
           </Link>
         </div>
 
-        {/* Square Appointments Widget — script is injected directly into this div */}
-        <div ref={widgetRef} className="w-full" />
+        <div className="text-center mb-10">
+          <h1 className="text-4xl font-bold text-stone-900 mb-4">Book an Appointment</h1>
+          <p className="text-stone-500">
+            Prefer to call?{" "}
+            <a href="tel:9204952306" className="text-sage-600 font-medium hover:underline">
+              (920) 495-2306
+            </a>
+          </p>
+        </div>
+
+        {/* Booking CTA */}
+        <div className="bg-sage-50 border border-sage-200 rounded-2xl px-8 py-14 text-center mb-10">
+          <span className="text-5xl mb-6 block">📅</span>
+          <p className="text-stone-700 text-lg mb-8 max-w-md mx-auto">
+            Ready to book? Click below to schedule your appointment online.
+          </p>
+          <a
+            href="https://app.squareup.com/dashboard/appointments/booking/channels"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-3 rounded-xl bg-sage-600 text-white font-semibold hover:bg-sage-700 transition-colors"
+          >
+            Book an Appointment
+          </a>
+        </div>
 
         {/* Info cards */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
           {[
             { icon: "📍", label: "Location", value: "525 Jefferson St\nSturgeon Bay, WI" },
             { icon: "📞", label: "Phone", value: "(920) 495-2306" },
