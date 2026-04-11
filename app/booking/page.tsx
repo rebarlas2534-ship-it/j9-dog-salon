@@ -1,8 +1,26 @@
 "use client";
 
-import Script from "next/script";
+import { useEffect, useRef } from "react";
 
 export default function BookingPage() {
+  const widgetRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = widgetRef.current;
+    if (!container) return;
+
+    const script = document.createElement("script");
+    script.src =
+      "https://square.site/appointments/buyer/widget/uc3yno4komnjs6/LMVWX2XP612M9.js";
+    script.async = true;
+    container.appendChild(script);
+
+    return () => {
+      // Clean up on unmount
+      if (container.contains(script)) container.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="py-16 bg-white">
       <div className="mx-auto max-w-3xl px-6">
@@ -16,15 +34,8 @@ export default function BookingPage() {
           </p>
         </div>
 
-        {/* Square Appointments Widget */}
-        <div className="w-full min-h-96">
-          {/* Start Square Appointments Embed Code */}
-          <Script
-            src="https://square.site/appointments/buyer/widget/uc3yno4komnjs6/LMVWX2XP612M9.js"
-            strategy="lazyOnload"
-          />
-          {/* End Square Appointments Embed Code */}
-        </div>
+        {/* Square Appointments Widget — script is injected directly into this div */}
+        <div ref={widgetRef} className="w-full" />
 
         {/* Info cards */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
