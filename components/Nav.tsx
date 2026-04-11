@@ -18,14 +18,14 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-200">
-      <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16">
+      <div className="mx-auto max-w-6xl px-6 flex items-center justify-between py-3">
         {/* Logo */}
-        <Link href="/" aria-label="J-9 Dog Salon — Home">
+        <Link href="/" aria-label="J-9 Dog Salon — Home" className="py-1">
           <Image
             src="/images/j9-logo-light.svg"
             alt="J-9 Dog Salon"
-            width={60}
-            height={60}
+            width={100}
+            height={100}
             priority
           />
         </Link>

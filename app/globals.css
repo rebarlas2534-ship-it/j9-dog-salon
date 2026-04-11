@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sage-50:  #f4f7f4;
-  --color-sage-100: #e6ede6;
-  --color-sage-200: #ccdacc;
-  --color-sage-300: #a8c0a9;
-  --color-sage-400: #7fa182;
-  --color-sage-500: #5e8462;
-  --color-sage-600: #4a6b4e;
-  --color-sage-700: #3c5740;
-  --color-sage-800: #2e4231;
-  --color-sage-900: #1e2c21;
+  /* Warm brown + gold palette to match J-9 logo */
+  --color-sage-50:  #fdf8f0;   /* warm cream background */
+  --color-sage-100: #f5edd6;   /* light cream */
+  --color-sage-200: #e8d3a0;   /* pale gold border */
+  --color-sage-300: #d4b870;   /* light gold */
+  --color-sage-400: #c9a84c;   /* gold — focus rings, hover accents */
+  --color-sage-500: #b89038;   /* deep gold */
+  --color-sage-600: #c9a84c;   /* gold — primary buttons & accents */
+  --color-sage-700: #2c1810;   /* warm brown — hover state */
+  --color-sage-800: #1e100a;   /* dark brown */
+  --color-sage-900: #120a05;   /* darkest brown */
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
