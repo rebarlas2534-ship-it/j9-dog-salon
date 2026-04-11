@@ -6,6 +6,12 @@ const photos: { src: string; alt: string }[] = [
   { src: "/images/gallery-5.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-6.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-7.jpeg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-8.jpg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-9.jpg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-10.jpg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-11.jpg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-12.jpg", alt: "Groomed dog at J-9 Dog Salon" },
+  { src: "/images/gallery-13.jpg", alt: "Groomed dog at J-9 Dog Salon" },
 ];
 
 const placeholders = [

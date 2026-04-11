@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <path id="topArcH" d="M 38,100 A 62,62 0 0,1 162,100"/>
+    <path id="bottomArcH" d="M 48,100 A 52,52 0 0,0 152,100"/>
+  </defs>
+  <!-- Badge -->
+  <circle cx="100" cy="100" r="72" fill="none" stroke="#C9A84C" stroke-width="1.2"/>
+  <circle cx="100" cy="100" r="68" fill="none" stroke="#C9A84C" stroke-width="0.5"/>
+  <circle cx="28" cy="100" r="2.5" fill="#C9A84C"/>
+  <circle cx="172" cy="100" r="2.5" fill="#C9A84C"/>
+  <line x1="72" y1="46" x2="128" y2="46" stroke="#C9A84C" stroke-width="0.75"/>
+  <polygon points="100,40 103,46 100,52 97,46" fill="#C9A84C"/>
+  <text x="100" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="4" fill="#2C1810">J9</text>
+  <line x1="68" y1="120" x2="132" y2="120" stroke="#C9A84C" stroke-width="0.5"/>
+  <text x="100" y="136" text-anchor="middle" font-family="Georgia, serif" font-size="7" letter-spacing="4" fill="#2C1810">DOG SALON</text>
+  <text font-family="Georgia, serif" font-size="6" letter-spacing="2" fill="#8C7355">
+    <textPath href="#topArcH" startOffset="50%" text-anchor="middle">PROFESSIONAL · DOG · GROOMING</textPath>
+  </text>
+  <text font-family="Georgia, serif" font-size="6" letter-spacing="2" fill="#8C7355">
+    <textPath href="#bottomArcH" startOffset="50%" text-anchor="middle">j9dogs.com</textPath>
+  </text>
+  <!-- Divider -->
+  <line x1="205" y1="40" x2="205" y2="160" stroke="#C9A84C" stroke-width="0.75"/>
+  <!-- Text lockup -->
+  <text x="235" y="98" font-family="Georgia, serif" font-size="52" letter-spacing="6" fill="#2C1810">J9</text>
+  <text x="235" y="124" font-family="Georgia, serif" font-size="18" letter-spacing="8" fill="#2C1810">DOG SALON</text>
+  <line x1="235" y1="134" x2="560" y2="134" stroke="#C9A84C" stroke-width="0.75"/>
+  <text x="235" y="150" font-family="Georgia, serif" font-size="10" letter-spacing="4" fill="#8C7355">STURGEON BAY · WISCONSIN</text>
+</svg>
