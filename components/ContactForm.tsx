@@ -2,28 +2,67 @@
 
 import { useState } from "react";
 
-export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "sent">("idle");
+type Status = "idle" | "submitting" | "success" | "error";
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+export default function ContactForm() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: wire up form submission (e.g. Resend, Formspree, or server action)
-    setStatus("sent");
+    setStatus("submitting");
+
+    try {
+      const res = await fetch("https://formspree.io/f/xlgoqdwn", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(e.currentTarget),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
-  if (status === "sent") {
+  if (status === "success") {
     return (
       <div className="rounded-2xl bg-sage-50 border border-sage-200 p-10 text-center">
-        <span className="text-5xl mb-4 block">✅</span>
-        <h3 className="text-lg font-semibold text-stone-800 mb-2">Message Sent!</h3>
-        <p className="text-stone-500 text-sm">
-          Thanks for reaching out. We&apos;ll get back to you as soon as possible.
+        <span className="text-5xl mb-4 block">🐾</span>
+        <h3 className="text-lg font-semibold text-stone-800 mb-2">Message Received!</h3>
+        <p className="text-stone-600 text-sm leading-relaxed">
+          Thanks for reaching out! Joan will be in touch within 24 hours.
         </p>
         <button
           onClick={() => setStatus("idle")}
           className="mt-6 text-sage-600 text-sm font-medium hover:underline"
         >
           Send another message
+        </button>
+      </div>
+    );
+  }
+
+  if (status === "error") {
+    return (
+      <div className="rounded-2xl bg-red-50 border border-red-200 p-10 text-center">
+        <span className="text-5xl mb-4 block">😕</span>
+        <h3 className="text-lg font-semibold text-stone-800 mb-2">Something went wrong</h3>
+        <p className="text-stone-600 text-sm leading-relaxed">
+          We weren&apos;t able to send your message. Please try again, or call us directly at{" "}
+          <a href="tel:9204952306" className="text-sage-600 font-semibold hover:underline">
+            (920) 495-2306
+          </a>
+          .
+        </p>
+        <button
+          onClick={() => setStatus("idle")}
+          className="mt-6 text-sage-600 text-sm font-medium hover:underline"
+        >
+          Try again
         </button>
       </div>
     );
@@ -102,9 +141,10 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full py-3 rounded-xl bg-sage-600 text-white font-semibold hover:bg-sage-700 transition-colors"
+        disabled={status === "submitting"}
+        className="w-full py-3 rounded-xl bg-sage-600 text-white font-semibold hover:bg-sage-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Message
+        {status === "submitting" ? "Sending…" : "Send Message"}
       </button>
     </form>
   );
