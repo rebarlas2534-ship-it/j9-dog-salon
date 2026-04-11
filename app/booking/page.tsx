@@ -31,7 +31,7 @@ export default function BookingPage() {
             Ready to book? Click below to schedule your appointment online.
           </p>
           <a
-            href="https://app.squareup.com/dashboard/appointments/booking/channels"
+            href="https://book.squareup.com/appointments/uc3yno4komnjs6/location/LMVWX2XP612M9/services"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-10 py-3 rounded-xl bg-sage-600 text-white font-semibold hover:bg-sage-700 transition-colors"
