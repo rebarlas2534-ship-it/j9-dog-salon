@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const photos: { src: string; alt: string }[] = [
+const photos = [
   { src: "/images/gallery-2.jpeg",  alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-8.jpg",   alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-5.jpeg",  alt: "Groomed dog at J-9 Dog Salon" },
@@ -8,13 +8,10 @@ const photos: { src: string; alt: string }[] = [
   { src: "/images/gallery-7.jpeg",  alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-12.jpg",  alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-4.jpeg",  alt: "Groomed dog at J-9 Dog Salon" },
-  { src: "/images/gallery-9.jpg",   alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-6.jpeg",  alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-11.jpg",  alt: "Groomed dog at J-9 Dog Salon" },
   { src: "/images/gallery-13.jpg",  alt: "Groomed dog at J-9 Dog Salon" },
 ];
-
-const placeholders = ["bg-amber-100"];
 
 export default function GalleryPage() {
   return (
@@ -28,7 +25,6 @@ export default function GalleryPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {/* Real photos */}
           {photos.map((photo) => (
             <div key={photo.src} className="relative aspect-square rounded-2xl overflow-hidden shadow-sm">
               <Image
@@ -37,18 +33,8 @@ export default function GalleryPage() {
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                style={{ objectPosition: "center center" }}
               />
-            </div>
-          ))}
-
-          {/* Remaining placeholders */}
-          {placeholders.map((bg, i) => (
-            <div
-              key={i}
-              className={`${bg} rounded-2xl aspect-square flex flex-col items-center justify-center gap-3 border-2 border-dashed border-white/60`}
-            >
-              <span className="text-4xl">📷</span>
-              <p className="text-xs text-stone-400">Photo coming soon</p>
             </div>
           ))}
         </div>
