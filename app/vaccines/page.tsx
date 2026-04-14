@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vaccine Records | J-9 Dog Salon",
+  title: "Health Records | J-9 Dog Salon",
   description: "Submit your dog's vaccination records to J-9 Dog Salon in Sturgeon Bay, WI.",
 };
 
@@ -26,7 +26,7 @@ export default function VaccinesPage() {
       {/* Hero */}
       <section className="bg-sage-50 py-16">
         <div className="mx-auto max-w-6xl px-6 text-center">
-          <h1 className="text-4xl font-bold text-stone-900 mb-4">Vaccine Records</h1>
+          <h1 className="text-4xl font-bold text-stone-900 mb-4">Health Records</h1>
           <p className="text-stone-500 max-w-lg mx-auto">
             For the safety of all dogs in our care, we require proof of current vaccinations
             before any grooming appointment.
@@ -83,7 +83,7 @@ export default function VaccinesPage() {
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
-              title="Vaccine Records Submission Form"
+              title="Health Records Submission Form"
             >
               Loading…
             </iframe>
