@@ -10,6 +10,7 @@ const links = [
   { href: "/booking", label: "Book Now" },
   { href: "/about", label: "About" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/vaccines", label: "Vaccine Records" },
   { href: "/contact", label: "Contact" },
 ];
 
