@@ -11,6 +11,7 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/gallery", label: "Gallery" },
   { href: "/vaccines", label: "Health Records" },
+  { href: "/policies", label: "Policies" },
   { href: "/contact", label: "Contact" },
 ];
 
