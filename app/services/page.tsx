@@ -31,6 +31,12 @@ const services = [
     addon: true,
     prices: { small: "$10", medium: "$10", large: "$10", xl: "$10", xxl: "$10" },
   },
+  {
+    name: "Flea Treatment",
+    description: "Required if your dog arrives with fleas. Please call ahead if you suspect your dog may have fleas — a flea treatment must be completed before grooming can proceed.",
+    addon: true,
+    prices: { small: "$20", medium: "$20", large: "$30", xl: "$30", xxl: "$40" },
+  },
 ];
 
 const sizes = [
