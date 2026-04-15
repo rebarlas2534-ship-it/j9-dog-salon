@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const services = [
   {
-    name: "Bath + Brush Out",
+    name: "Bath & Brush Out",
     description: "Full bath plus a thorough brush-out to reduce shedding and tangles.",
     addon: false,
     prices: { small: "$55", medium: "$70", large: "$90", xl: "$110", xxl: "$130" },
@@ -11,19 +11,25 @@ const services = [
     name: "Full Groom",
     description: "Bath, breed-specific cut, nail trim, and ear cleaning — all included.",
     addon: false,
-    prices: { small: "$65", medium: "$85", large: "$105", xl: "$130", xxl: "$160+" },
+    prices: { small: "$65", medium: "$85", large: "$105", xl: "$125", xxl: "$160" },
   },
   {
     name: "De-Shedding",
-    description: "Specialized shampoo, deep conditioning, and intensive brush-out. Add-on to any service.",
-    addon: true,
-    prices: { small: "+$20", medium: "+$25", large: "+$30", xl: "+$35", xxl: "+$100" },
+    description: "Specialized shampoo, deep conditioning, and intensive brush-out.",
+    addon: false,
+    prices: { small: "$35", medium: "$50", large: "$65", xl: "$80", xxl: "$120" },
   },
   {
     name: "Nail Trim",
     description: "Standalone nail clipping and filing. Already included in Full Groom.",
     addon: false,
-    prices: { small: "$15", medium: "$15", large: "$20", xl: "$20", xxl: "$25" },
+    prices: { small: "$15", medium: "$15", large: "$20", xl: "$22", xxl: "$25" },
+  },
+  {
+    name: "Paw Balm Treatment",
+    description: "Moisturizing balm applied to paws and pads. Add-on to any service.",
+    addon: true,
+    prices: { small: "$10", medium: "$10", large: "$10", xl: "$10", xxl: "$10" },
   },
 ];
 
@@ -95,13 +101,20 @@ export default function ServicesPage() {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-6 bg-stone-50 border border-stone-200 rounded-xl px-6 py-5 text-sm text-stone-600 leading-relaxed">
+        <div className="mt-6 bg-stone-50 border border-stone-200 rounded-xl px-6 py-5 text-sm text-stone-600 leading-relaxed space-y-3">
           <p>
             <span className="font-semibold text-stone-800">Please note: </span>
             All prices are starting prices and may vary based on coat condition, breed, and
             temperament. Dogs that are heavily soiled or matted require extra time and care — we&apos;ll
             assess your dog at drop-off and provide a quote before we begin.{" "}
             <span className="font-semibold text-stone-800">No surprises.</span>
+          </p>
+          <p>
+            First-time puppy grooms may require additional time and care. Please call us at{" "}
+            <a href="tel:9204952306" className="text-sage-600 font-medium hover:underline">
+              920-495-2306
+            </a>{" "}
+            before booking your pup&apos;s first appointment.
           </p>
         </div>
 
