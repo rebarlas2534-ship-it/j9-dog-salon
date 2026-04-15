@@ -34,8 +34,8 @@ export default function ContactPage() {
                 {
                   icon: "✉️",
                   label: "Email",
-                  content: "hello@j9dogsalon.com",
-                  href: "mailto:hello@j9dogsalon.com",
+                  content: "joan@j9dogs.com",
+                  href: "mailto:joan@j9dogs.com",
                 },
                 {
                   icon: "🕐",
