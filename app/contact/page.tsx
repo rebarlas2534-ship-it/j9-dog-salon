@@ -62,18 +62,6 @@ export default function ContactPage() {
               ))}
             </div>
 
-            {/* Map */}
-            <div className="mt-10 overflow-hidden rounded-xl">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2!2d-87.3776!3d44.8397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805b2b2b2b2b2b3%3A0x0!2s525+Jefferson+St%2C+Sturgeon+Bay%2C+WI+54235!5e0!3m2!1sen!2sus!4v1"
-                width="100%"
-                height="300"
-                style={{ border: 0, borderRadius: 8 }}
-                allowFullScreen
-                loading="lazy"
-                title="J-9 Dog Salon location"
-              />
-            </div>
           </div>
 
           {/* Contact Form */}
