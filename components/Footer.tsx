@@ -27,6 +27,8 @@ export default function Footer() {
               { href: "/booking", label: "Book an Appointment" },
               { href: "/about", label: "About Us" },
               { href: "/gallery", label: "Gallery" },
+              { href: "/vaccines", label: "Health Records" },
+              { href: "/policies", label: "Policies" },
               { href: "/contact", label: "Contact" },
             ].map((l) => (
               <li key={l.href}>
