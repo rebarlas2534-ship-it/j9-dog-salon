@@ -82,7 +82,7 @@ export default function AboutPage() {
               {
                 icon: "🏡",
                 title: "Community Rooted",
-                desc: "We&apos;re a small, local business proud to serve Sturgeon Bay and the greater Door County area.",
+                desc: "We're a small, local business proud to serve Sturgeon Bay and the greater Door County area.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-xl p-6 border border-stone-100 flex gap-4 items-start">
