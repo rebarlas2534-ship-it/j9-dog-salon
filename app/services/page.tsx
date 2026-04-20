@@ -64,8 +64,8 @@ export default function ServicesPage() {
           </p>
         </div>
 
-        {/* Pricing Table */}
-        <div className="overflow-x-auto rounded-2xl border border-stone-200 shadow-sm">
+      {/* Pricing Table — desktop */}
+        <div className="hidden md:block overflow-x-auto rounded-2xl border border-stone-200 shadow-sm">
           <table className="w-full text-sm min-w-[700px]">
             <thead className="bg-sage-600 text-white">
               <tr>
@@ -103,9 +103,6 @@ export default function ServicesPage() {
                 </tr>
               ))}
             </tbody>
-          </table>
-        </div>
-
         {/* Disclaimer */}
         <div className="mt-6 bg-stone-50 border border-stone-200 rounded-xl px-6 py-5 text-sm text-stone-600 leading-relaxed space-y-3">
           <p>
