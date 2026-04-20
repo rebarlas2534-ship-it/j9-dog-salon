@@ -64,7 +64,7 @@ export default function ServicesPage() {
           </p>
         </div>
 
-      {/* Pricing Table — desktop */}
+        {/* Pricing Table — desktop only */}
         <div className="hidden md:block overflow-x-auto rounded-2xl border border-stone-200 shadow-sm">
           <table className="w-full text-sm min-w-[700px]">
             <thead className="bg-sage-600 text-white">
@@ -103,6 +103,39 @@ export default function ServicesPage() {
                 </tr>
               ))}
             </tbody>
+          </table>
+        </div>
+
+        {/* Pricing Cards — mobile only */}
+        <div className="md:hidden space-y-4">
+          {services.map((svc) => (
+            <div key={svc.name} className="rounded-2xl border border-stone-200 overflow-hidden">
+              <div className="bg-sage-600 px-5 py-4">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <p className="font-semibold text-white">{svc.name}</p>
+                  {svc.addon && (
+                    <span className="text-xs bg-sage-500 text-white px-2 py-0.5 rounded-full font-medium">
+                      Add-on
+                    </span>
+                  )}
+                </div>
+                <p className="text-sage-200 text-xs mt-1 leading-relaxed">{svc.description}</p>
+              </div>
+              <div className="divide-y divide-stone-100">
+                {sizes.map((s) => (
+                  <div key={s.key} className="flex justify-between items-center px-5 py-3">
+                    <div>
+                      <span className="text-sm font-medium text-stone-700">{s.label}</span>
+                      <span className="text-xs text-stone-400 ml-2">{s.sub}</span>
+                    </div>
+                    <span className="text-sm font-semibold text-sage-700">{svc.prices[s.key]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
         {/* Disclaimer */}
         <div className="mt-6 bg-stone-50 border border-stone-200 rounded-xl px-6 py-5 text-sm text-stone-600 leading-relaxed space-y-3">
           <p>
