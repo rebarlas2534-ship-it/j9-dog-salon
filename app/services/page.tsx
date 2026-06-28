@@ -14,16 +14,16 @@ const services = [
     prices: { small: "$65", medium: "$85", large: "$105", xl: "$125", xxl: "$160" },
   },
   {
-    name: "De-Shedding",
-    description: "Specialized shampoo, deep conditioning, and intensive brush-out.",
-    addon: false,
-    prices: { small: "$35", medium: "$50", large: "$65", xl: "$80", xxl: "$120" },
-  },
-  {
     name: "Nail Trim",
     description: "Standalone nail clipping and filing. Already included in Full Groom.",
     addon: false,
     prices: { small: "$15", medium: "$15", large: "$20", xl: "$22", xxl: "$25" },
+  },
+  {
+    name: "De-Shedding",
+    description: "Intensive brush-out with specialized shampoo and deep conditioning treatment. Add-on to any service.",
+    addon: true,
+    prices: { small: "$20", medium: "$25", large: "$30", xl: "$35", xxl: "$40" },
   },
   {
     name: "Paw Balm Treatment",
