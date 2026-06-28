@@ -21,7 +21,7 @@ const services = [
   },
   {
     name: "De-Shedding",
-    description: "Intensive brush-out with specialized shampoo and deep conditioning treatment. Add-on to any service.",
+    description: "Intensive brush-out with specialized shampoo and deep conditioning treatment. Add-on to bath and brush-out only.",
     addon: true,
     prices: { small: "$20", medium: "$25", large: "$30", xl: "$35", xxl: "$40" },
   },
